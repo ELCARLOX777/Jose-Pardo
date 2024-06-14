@@ -1,0 +1,1072 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.princi {
+    display: flex;
+    height: 600px; /* Altura fija para el banner */
+}
+.texto {
+    flex: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.86), rgba(11, 11, 11, 1));
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 34px;
+}
+.imagen {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imagen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.3), rgba(0, 0, 0, 0.8));
+    z-index: 1;
+    pointer-events: none;
+}
+.imagen img {
+    position: relative;
+    z-index: 0;
+}
+
+.deggg {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("image/degradado.png");
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+.banner2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, #00008B, #000000);
+    color:white;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header a, header nav {
+    position: relative;
+    z-index: 2;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header a:hover {
+    background-color: white !important;
+    color: #00008B;
+}
+
+header {
+    background: linear-gradient(to right, #00008B, #000000);
+    color: black;
+    font-size: 160%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 1;
+}
+
+header a, header nav {
+    position: relative;
+    z-index: 2;
+}
+
+footer div div div div{
+
+}
+
+.mapa{
+    list-style-type: none;
+    display: list-item;
+    text-align: left;
+    unicode-bidi: isolate;
+}
+
+.mapa .normal {
+    color: white;
+    text-decoration: none;
+}
+
+.mapa .normal:hover {
+    text-decoration: underline;
+}
+
+footer ul li {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: white;
+}
+
+footer h1{
+    margin-left: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    padding-bottom: 2px;
+    margin-bottom: 2px;"
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav{
+    margin-left: -10%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.banner .btn:hover {
+    background-color: #0056b3;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.highlight {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.highlight h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.highlight p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.highlight a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.highlight a:hover {
+    background-color: #0056b3;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    color: black;
+    font-weight: bold;
+}
+
+.offer {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.offer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.offer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.offer a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.offer a:hover {
+    background-color: #0056b3;
+}
+
+.help {
+    background-color: rgb(227, 221, 255);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.help h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.help p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.help a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.help a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: linear-gradient(to right, #00008B, #000000);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline
+}
+
+.divplanImage{
+        text-align: right;
+        border-radius: 5px;
+        width: 464px;
+        height: 314px;
+        background-image: url('image/foto1.jpg');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
+}
+.divplan{
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
+    height: auto;
+
+    justify-content: space-around;
+    background-image: url('image/logoremoto.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+.divalta{
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    height: auto;
+
+
+    justify-content: space-around;
+    background-image: url('image/fondo2p2.png'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el div */
+    background-position: center; /* Centra la imagen de fondo dentro del div */
+    padding: 50px;
+}
+
+
+.divtv{
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    height: auto;
+
+
+    justify-content: space-around;
+    background-image: url('image/FondoTV.png'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el div */
+    background-position: center; /* Centra la imagen de fondo dentro del div */
+    padding: 50px;
+}
+.divplan h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.divalta h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.divtv h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divplan p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.divalta p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.divtv p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divplan a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.divalta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.divtv a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divplan a:hover {
+    background-color: #0056b3;
+}
+.divalta a:hover {
+    background-color: #0056b3;
+}
+.divtv a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.divmitad {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+
+    justify-content: space-around;
+    background-image: url('image/fondoOfertas.png'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el div */
+    background-position: center; /* Centra la imagen de fondo dentro del div */
+    padding: 50px;
+}
+
+.divmitad h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divmitad p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divmitad a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divmitad a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.divilim {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+
+    justify-content: space-around;
+    background-image: url('image/fondoOfertas.png'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el div */
+    background-position: center; /* Centra la imagen de fondo dentro del div */
+    padding: 50px;
+}
+
+.divilim h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divilim p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divilim a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divilim a:hover {
+    background-color: #0056b3;
+}
+
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 27%;
+    margin-right: 20%;
+}
+
+.mission-text {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.mission-image {
+    width: 90%;
+    padding: 20px;
+}
+
+.mission-image img {
+    max-width: 70%;
+    height: auto;
+}
+
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.divFija{
+        text-align: left;
+        border-radius: 20px;
+        width: 30%;
+        padding: 10px 30px 30px;
+        background-color: rgba(0,0,0,0.3);
+        font-size: 24px;
+        margin-bottom: 20px;
+}
+
+.divFijaImage{
+    text-align: right;
+    border-radius: 5px;
+    width: 464px;
+    height: 314px;
+    background-image: url('image/fondoRepair.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.divfija p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divfija a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divfija a:hover {
+    background-color: #0056b3;
+}
+
+hr{
+    border: black;
+    solid-color: black;
+}
+
+.divtvvImage{
+
+        text-align: right;
+        border-radius: 5px;
+        width: 464px;
+        height: 314px;
+        background-image: url('image/software2.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
+}
+
+.divtvv h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divtvv p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divtvv a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divtvv a:hover {
+    background-color: #0056b3;
+}
+
+.divpreImage{
+    text-align: right;
+    border-radius: 5px;
+    width: 464px;
+    height: 314px;
+    background-image: url('image/fondoParaRedes.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+
+.divpre h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divpre p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divpre a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divpre a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.divemImage{
+    text-align: right;
+    border-radius: 5px;
+    width: 464px;
+    height: 314px;
+    background-image: url('image/aea22.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.divem h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divem p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divem a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divem a:hover {
+    background-color: #0056b3;
+}
+
+.divnovImage{
+    text-align: right;
+    border-radius: 5px;
+    width: 464px;
+    height: 314px;
+    background-image: url('image/asesoramiento.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.divnov h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.divnov p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divnov a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.divnov a:hover {
+    background-color: #0056b3;
+}
+
+/* modificado por carlox */
+.serviCont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 0;
+    position: relative;
+}
+
+.divinter {
+    text-align: left;
+    border-radius: 20px;
+    width: 30%;
+    padding: 10px 30px 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: rgba(113, 231, 240, 0.74);
+    position: relative;
+    overflow: hidden;
+}
+
+.divinter p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.divinterImage {
+    text-align: right;
+    border-radius: 5px;
+    width: 464px;
+    height: 314px;
+    background-image: url('image/mantenimiento.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.verMasImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 2;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 69, 255, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.divinter:hover .verMasImg,
+.divinter:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+/* modificado por carlox */
+.ubicacion{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.highlightsyt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 40px;/*modificado por carlox*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* actualizaciones de carlos */
+.servicios-externo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 55px;
+}
+
+.servicios-externo-remoto{
+    margin-right: 15%;
+    margin-left: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+.highlightsdomi{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: linear-gradient(to right, #242481, #1f3ea3);
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 8px;
+}
+
+img.domicilioimgtec{
+    width: auto;
+    height: 358px;
+    margin-left: 5%;
+    margin: 2%;
+    border-radius: 8px;
+}
+
+img.domicilioimgmini{
+    border-radius: 8px;
+}
+
+.highlightsDesc {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.descuento {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.descuento img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.descuento h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.descuento p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.descuento .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00008B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.descuento .btn:hover {
+    background-color: #0056b3;
+}
+
+/*CODE LARA*/
+/*EDITADO HOY*/
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.mission-text {
+    width: 50%;
+    padding: 20px;
+    padding-top: 0;
+    text-align: justify;
+    border-style: double;
+    margin: 1% 1% 1% 1%;
+    
+}
+
+.titleValo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 3.3%;
+    font-size: 190%;
+}
+
+.valoMayor {
+    display: flex;
+    flex-direction: row;
+}
+
+.valo1 {
+    /*background-color: green;*/
+    margin: 1%;
+}
+
+.valo2 {
+    /* background-color: lightblue; */
+    margin: 1%;
+    margin-left: 5%;
+}
+
+.titis {
+    text-decoration: underline;
+}
+
+.noSomos {
+    border-style:double;
+    background: linear-gradient(to right, #00008B, #000000);
+    text-align: center;
+    color: white;
+}
+
+@font-face {
+    font-family: Battipaglia;
+    src: url('fuente/Battipaglia.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.textPrueba {
+    font-family: Battipaglia, consolas;
+    font-size: 300%;
+    margin-bottom: -2%;
+}
+
+/*EDITADO HOY FIN*/
