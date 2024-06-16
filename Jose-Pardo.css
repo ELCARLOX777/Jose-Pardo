@@ -1076,14 +1076,14 @@ img.domicilioimgmini{
 }
 
 @font-face {
-    font-family: chevin-pro;
+    font-family: chevinpro;
     src: url('fuente/ChevinBold.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 .textPrueba{
-    font-family: chevin-pro, sans-serif;
+    font-family: chevinpro, sans-serif;
     font-style: normal;
     color: rgb(0, 66, 107);
     font-size: 300%;
