@@ -811,15 +811,16 @@ hr{
     padding: 0 0;
     position: relative;
 }
-
+/*Hecho por carlox(tremendo cambio)*/
 .divinter {
     text-align: left;
     border-radius: 20px;
+    border-style:groove;
     width: 30%;
     padding: 10px 30px 30px;
     font-size: 24px;
     margin-bottom: 20px;
-    background-color: rgba(113, 231, 240, 0.74);
+    background-color: rgba(238, 238, 238, 0.74);
     position: relative;
     overflow: hidden;
 }
