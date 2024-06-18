@@ -1131,3 +1131,23 @@ ul{
 .parrafoPerso{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+/*CODIGO PARA CONTACTO - PAGINA JP - 17/06/2024*/
+.mission-text2 {
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+    background-color: gray;
+    margin-top: 1%;
+    border-radius: 39px 0px 39px 22px ;
+}
+
+.contacto-p2 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-tt {
+    margin-top: 1%;
+}
