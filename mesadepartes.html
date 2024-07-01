@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Partes Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .form-header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-footer {
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h1>Mesa de Partes Digital</h1>
+            <p>¡Hola! Revisa la <strong>fecha de recepción de tus documentos</strong>, según lo establecido en el artículo 46.2 del <a href="https://www.decreto.supremo.075-2023-pcm">Decreto Supremo N.° 075-2023-PCM</a>:</p>
+            <ul>
+                <li>Desde las 12:00 a. m. hasta las 10:00 p. m., el mismo día.</li>
+                <li>Después de las 10:00 p. m. hasta las 11:59 p. m., a partir del día hábil siguiente.</li>
+                <li>Los sábados, domingos, feriados o cualquier otro día inhábil, a partir del día hábil siguiente.</li>
+            </ul>
+        </div>
+        <div class="form-section">
+            <h2>Paso 1 de 3</h2>
+            <h3>Información del solicitante</h3>
+            <form action="/submit" method="post">
+                <div class="form-group">
+                    <label for="persona">Persona natural o jurídica</label>
+                    <select id="persona" name="persona">
+                        <option value="">Selecciona una opción</option>
+                        <option value="natural">Persona Natural</option>
+                        <option value="juridica">Persona Jurídica</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico de contacto (debes tener acceso al correo)</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular de contacto</label>
+                    <input type="text" id="celular" name="celular">
+                </div>
+                <div class="form-footer">
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
