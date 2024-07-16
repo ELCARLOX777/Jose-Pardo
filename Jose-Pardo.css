@@ -1188,3 +1188,29 @@ ul{
     max-width: 100%;
     height: auto;
 }
+.curriculumButton {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 270px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.curriculumButton:hover {
+    background-color: #0056b3;
+}
+.curriculumButton a {
+    color: white;
+    text-decoration: none;
+}
+
+.curriculumButton a:hover {
+    text-decoration: underline;
+}
